@@ -1,0 +1,289 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Geist', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.logo {
+  height: 24px;
+}
+.nav span,
+.lang-btn {
+  margin-left: 0.75rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+.lang-btn {
+  background: #4c4c4c;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 60vh;
+}
+.carousel {
+  position: relative;
+  height: 100%;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+.slide {
+  min-width: 100%;
+  position: relative;
+  height: 100%;
+}
+.caption {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.desc {
+  font-size: 0.875rem;
+}
+.controls {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.controls button {
+  background: black;
+  color: white;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+/* ===== Mission Section ===== */
+.mission {
+  text-align: center;
+  padding: 4rem 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+.culture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.culture img {
+  height: 40px;
+  border-radius: 999px;
+}
+.highlight {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* ===== Chairman Section ===== */
+.chairman {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+.typing {
+  font-size: 0.9rem;
+  color: #666;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.signature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ===== Team ===== */
+.team {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.members {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.member img {
+  border-radius: 999px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.member p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ===== Programs ===== */
+.programs {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+.program {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.program img {
+  width: 40%;
+  object-fit: cover;
+}
+.program div {
+  padding: 1rem;
+}
+
+/* ===== App Showcase ===== */
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4rem 1rem;
+  align-items: center;
+}
+.showcase .text {
+  flex: 1 1 45%;
+  padding-right: 2rem;
+}
+.showcase .text h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.showcase .mockup {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+.mockup img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* ===== Partners ===== */
+.partners {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+}
+.carousel-partners {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+}
+.partner {
+  min-width: 150px;
+  text-align: center;
+}
+.partner img {
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+.partner p {
+  font-weight: bold;
+}
+.partner span {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #222;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer img {
+  height: 24px;
+  margin-bottom: 1rem;
+}
+.footer .legal {
+  font-size: 0.7rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+.newsletter input {
+  padding: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid #444;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
